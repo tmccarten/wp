@@ -56,9 +56,8 @@ gulp.task('javascript', function() {
 
 // Watch everything
 gulp.task('watch', function() {
-	browserSync.init({		
-		proxy: 'localhost/wp/',
-		port: 8080
+	browserSync.init({
+		proxy: 'localhost/wp/'
 	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
 	gulp.watch(js + '**/*.js', ['javascript']);
