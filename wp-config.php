@@ -64,6 +64,8 @@ define('NONCE_SALT',       'XE+Erar}YC($Q,L+0zBc#]8zf{UVc(3|`+4b;QBl:5?J+~O!4@S<
  */
 $table_prefix = 'wp_';
 
+define( 'WP_DEBUG', true );
+
 
 
 
