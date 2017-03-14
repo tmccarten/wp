@@ -17,3 +17,9 @@ a {
 		outline: 0;
 	}
 }
+
+.cat-links + *, .comments-link + *, .tags-links + * {
+    
+    margin-left: .5em;
+    
+}
