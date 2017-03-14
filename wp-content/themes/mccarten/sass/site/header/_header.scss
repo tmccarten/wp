@@ -1,9 +1,10 @@
 .site-header {
     position: relative;
-    font-family: $font__serif;
+    font-family: $font__serif;    
+    padding: 1em;
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    align-items: center;
     
     @media screen and (min-width: $query__small) {
         padding: 2em;

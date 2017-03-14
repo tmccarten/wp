@@ -727,13 +727,16 @@ a:hover, a:active {
 .site-header {
 	position: relative;
 	font-family: "Merriweather", "Georgia", serif;
+	padding: 1em;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	padding: 1em;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 @media screen and (min-width: 600px) {
