@@ -105,6 +105,8 @@ add_action( 'widgets_init', 'mccarten_widgets_init' );
  * Enqueue scripts and styles.
  */
 function mccarten_scripts() {
+        wp_enqueue_style( 'mccarten-fonts', 'https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:100,300,400,700" rel="stylesheet"
+');    
 	wp_enqueue_style( 'mccarten-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'mccarten-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
