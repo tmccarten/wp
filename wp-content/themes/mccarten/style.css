@@ -737,8 +737,6 @@ a:hover, a:active {
 .entry-content:after,
 .comment-content:before,
 .comment-content:after,
-.site-content:before,
-.site-content:after,
 .site-footer:before,
 .site-footer:after {
 	content: "";
@@ -749,7 +747,6 @@ a:hover, a:active {
 .clear:after,
 .entry-content:after,
 .comment-content:after,
-.site-content:after,
 .site-footer:after {
 	clear: both;
 }
@@ -778,10 +775,18 @@ a:hover, a:active {
 	}
 }
 
-.site-content__front-page {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+@media screen and (min-width: 900px) {
+	.home .site-content {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+	.home .content-area {
+		width: 55%;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -905,6 +910,47 @@ a:hover, a:active {
 
 .widget select {
 	max-width: 100%;
+}
+
+.widget h2 {
+	font-size: 24px;
+	font-size: 1.5rem;
+}
+
+.widget-area {
+	padding: 1em;
+	background-color: #151825;
+}
+
+.widget_recent_entries ul {
+	margin-left: 0;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.widget_recent_entries li {
+	margin-top: 1em;
+	font-size: 1em;
+}
+
+.widget_recent_entries .post-date {
+	display: block;
+	font-size: 0.8em;
+	color: moccasin;
+}
+
+@media screen and (min-width: 900px) {
+	.home .widget-area {
+		width: 35%;
+		padding-left: 1em;
+		border-left: 1px dotted #252c46;
+	}
+}
+
+@media screen and (min-width: 900px) and (min-width: 900px) {
+	.home .widget-area {
+		background-color: transparent;
+	}
 }
 
 /*--------------------------------------------------------------

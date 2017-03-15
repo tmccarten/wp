@@ -20,6 +20,8 @@
 </head>
 
 <body <?php body_class(); ?>>
+    
+    
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mccarten' ); ?></a>
         
@@ -50,11 +52,7 @@
 	</header><!-- #masthead -->
     
 
-        <?php
-        if ( is_front_page() ) : ?>
-            <div id="content" class="site-content site-content__front-page">
-        
-        <?php else : ?>
-            <div id="content" class="site-content">
-        <?php endif; ?>
+
+    <div id="content" class="site-content ">
+   
 
