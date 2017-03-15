@@ -1,5 +1,5 @@
 .site-header-container {
-    background-color: #252c46;
+    background-color: $color__fringe;
 }
 
 .site-header {
@@ -19,8 +19,8 @@
     }
 }
 
-.site-branding {
-    width: 55%;
+.site-branding {    
+    margin-right: 1em;
 }
 
 @media screen and (min-width: $query__small) {
@@ -28,16 +28,5 @@
     .site-header {
         flex-wrap: wrap;
         padding: 1em 2em;
-    }
-    
-    .site-branding {
-        width: 55%;
-    }
-}
-
-@media screen and (min-width: $query__medium) {
-    
-    .site-branding {
-        //width: 35%;
     }
 }
