@@ -14,6 +14,11 @@
     }
 }
 
+.blog .content-area {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
 @media screen and (min-width: $query__medium) {
 
 .home {
@@ -22,7 +27,7 @@
         justify-content: space-between;
     }
     
-    .content-area {
+    .content-area {        
         width: 55%;
     }   
     
