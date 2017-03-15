@@ -1,8 +1,6 @@
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+.main-navigation {	
+	display: block;	
+        font-family: $font__main;        
 
 	ul {
 		display: none;
@@ -73,7 +71,18 @@
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: flex;
+        flex-direction: column;
+}
+
+.menu-toggle {
+    background: none;
+    color: white;
+    border-color: white;
+}
+
+.main-navigation.toggled ul li {
+    padding: 2em 0;
 }
 
 @media screen and (min-width: $query__small) {
@@ -84,9 +93,9 @@
 		display: block;
                 
                 li {
-                    margin-right: .5em;
+                    margin-right: 1em;
                     
-                    :last-child {
+                    &:last-child {
                         margin-right: 0;                        
                     }
                 } 
