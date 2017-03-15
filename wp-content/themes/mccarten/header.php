@@ -50,4 +50,11 @@
 	</header><!-- #masthead -->
     
 
-	<div id="content" class="site-content">
+        <?php
+        if ( is_front_page() ) : ?>
+            <div id="content" class="site-content site-content__front-page">
+        
+        <?php else : ?>
+            <div id="content" class="site-content">
+        <?php endif; ?>
+
