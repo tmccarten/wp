@@ -1,0 +1,16 @@
+.site-footer-container {
+    background-color: darken($color__fringe, 5);
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.site-footer {
+    padding: 1em;
+    @include font-size(.8);
+    
+    @media screen and (min-width: $query__small) {
+        padding: 1em 2em;
+    }
+}
+

@@ -867,6 +867,32 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+.site-footer-container {
+	background-color: #1c2235;
+	min-height: 200px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.site-footer {
+	padding: 1em;
+	font-size: 16px;
+	font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+	.site-footer {
+		padding: 1em 2em;
+	}
+}
+
+/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
