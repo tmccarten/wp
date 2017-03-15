@@ -28,6 +28,9 @@
     <div class="site-header-container">
 	<header id="masthead" class="site-container site-header" role="banner">            
 		<div class="site-branding">
+                    
+                    <?php the_custom_logo(); ?>
+                    
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -53,6 +56,6 @@
     
 
 
-    <div id="content" class="site-content ">
+    <div id="content" class="site-content">
    
 

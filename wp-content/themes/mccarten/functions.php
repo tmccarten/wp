@@ -67,6 +67,14 @@ function mccarten_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+        
+        // Add theme support for custom logo
+        
+        add_theme_support( 'custom-logo', array(
+            'width' => 250,
+            'height' => 93,
+            'flex-width' => true
+            ));
 }
 endif;
 add_action( 'after_setup_theme', 'mccarten_setup' );

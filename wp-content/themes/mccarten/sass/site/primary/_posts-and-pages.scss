@@ -6,6 +6,10 @@
 	margin: 0 0 1.5em;
 }
 
+.post .entry-title {
+    margin-top: 0;
+}
+
 .byline,
 .updated:not(.published){
 	display: none;
@@ -25,4 +29,21 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.post {
+    word-wrap: break-word;
+}
+
+.posted-on, .cat-links {
+    color: $color__text-secondary;
+}
+
+@media screen and (min-width: $query__small) {
+
+.post {
+    padding: 2em;
+    background-color: $color__fringe;
+}
+
 }

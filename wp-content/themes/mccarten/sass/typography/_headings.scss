@@ -3,6 +3,8 @@ h1, h2, h3, h4, h5, h6 {
         font-family: $font__serif;
 }
 
+@media screen and (min-width: $query__medium) {
+
 h1 {
     font-size: 2.5em;
 }
@@ -25,4 +27,6 @@ h5 {
 
 h6 {
     font-size: 1.1em;
+}
+
 }
