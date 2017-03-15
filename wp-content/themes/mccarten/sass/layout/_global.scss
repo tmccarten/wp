@@ -14,6 +14,10 @@
     }
 }
 
+.content-area {
+    min-height: 60vh;
+}
+
 .blog .content-area {
     max-width: 45em;
     margin: 0 auto;
@@ -21,7 +25,7 @@
 
 @media screen and (min-width: $query__medium) {
 
-.home {
+.home, .single, .contact {
     .site-content {
         display: flex;
         justify-content: space-between;
@@ -29,7 +33,7 @@
     
     .content-area {        
         width: 55%;
-    }   
+    }
     
 }
 
